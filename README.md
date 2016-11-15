@@ -33,7 +33,6 @@ conda search nilearn --channel conda-forge
 ```
 
 
-
 About conda-forge
 =================
 
