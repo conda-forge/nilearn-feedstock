@@ -14,9 +14,7 @@ Summary: Statistical learning for neuroimaging in Python
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/nilearn-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/nilearn-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/nilearn-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/nilearn-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/nilearn-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/nilearn-feedstock/branch/master)
+All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/nilearn-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/nilearn-feedstock)
 
 Current release info
 ====================

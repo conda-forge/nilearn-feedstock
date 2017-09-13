@@ -1,17 +1,17 @@
-{% set version = "0.2.5" %}
+{% set version = "0.3.1" %}
 
 package:
   name: nilearn
   version: {{ version }}
 
 source:
-  fn: nilearn-{{ version }}.tar.gz
-  url: https://files.pythonhosted.org/packages/source/n/nilearn/nilearn-{{ version }}.tar.gz
-  md5: 383d406d2eeec2bf7b68cc5d4fe20cb9
+  url: https://pypi.io/packages/source/n/nilearn/nilearn-{{ version }}.tar.gz
+  sha256: 06f84f3206b4c0324ffb0d60d75d25482b1cca0b1ab805f467a2b1c60acc6a4e
 
 build:
-    number: 1
-    script: python setup.py install --single-version-externally-managed --record record.txt
+  number: 0
+  noarch: python
+  script: python setup.py install --single-version-externally-managed --record record.txt
 
 requirements:
   build:
@@ -36,8 +36,10 @@ test:
 about:
   home: https://nilearn.github.io
   license: BSD 3-clause
-  summary: Statistical learning for neuroimaging in Python
+  license_file: LICENSE
+  summary: 'Statistical learning for neuroimaging in Python'
 
 extra:
   recipe-maintainers:
     - lesteve
+    - ocefpaf
