@@ -14,12 +14,15 @@ Summary: Statistical learning for neuroimaging in Python
 Current build status
 ====================
 
-All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/nilearn-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/nilearn-feedstock)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/nilearn-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/nilearn-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/nilearn/badges/version.svg)](https://anaconda.org/conda-forge/nilearn)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/nilearn/badges/downloads.svg)](https://anaconda.org/conda-forge/nilearn)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-nilearn-green.svg)](https://anaconda.org/conda-forge/nilearn) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/nilearn.svg)](https://anaconda.org/conda-forge/nilearn) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/nilearn.svg)](https://anaconda.org/conda-forge/nilearn) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/nilearn.svg)](https://anaconda.org/conda-forge/nilearn) |
 
 Installing nilearn
 ==================
