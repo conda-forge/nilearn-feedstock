@@ -1,4 +1,4 @@
-{% set version = "0.5.0" %}
+{% set version = "0.5.1" %}
 
 package:
   name: nilearn
@@ -6,12 +6,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/n/nilearn/nilearn-{{ version }}.tar.gz
-  sha256: 085cd4f7c19a47ed9d951c853223190b9fb0dbddeaeedf8f86dfa9c53d6492ca
+  sha256: dca56e8a1f0fc6dcd1c997383187efc31788294ac6bcbbaebac2b9a962a44cbb
 
 build:
   number: 0
   noarch: python
-  script: python -m pip install --no-deps --ignore-installed .
+  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
   build:
@@ -35,7 +35,7 @@ test:
 
 about:
   home: https://nilearn.github.io
-  license: BSD 3-clause
+  license: BSD-3-Clause
   license_file: LICENSE
   summary: 'Statistical learning for neuroimaging in Python'
 
