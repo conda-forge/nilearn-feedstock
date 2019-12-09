@@ -20,6 +20,7 @@ requirements:
     - numpy
     - scipy
     - scikit-learn
+    - joblib
     - nibabel
   run:
     - python
@@ -27,6 +28,7 @@ requirements:
     - scipy
     - scikit-learn
     - nibabel
+    - joblib
     - matplotlib
 
 test:
