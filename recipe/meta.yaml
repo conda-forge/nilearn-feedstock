@@ -15,7 +15,7 @@ build:
 
 requirements:
   build:
-    - python
+    - python >=3.5
     - pip
     - numpy
     - scipy
@@ -23,7 +23,7 @@ requirements:
     - joblib
     - nibabel
   run:
-    - python
+    - python >=3.5
     - numpy
     - scipy
     - scikit-learn
