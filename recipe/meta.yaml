@@ -9,7 +9,7 @@ source:
   sha256: e18f029e915232450e6d3574a2253d8b6cb2d7bbea521118854a1e2ea67c8242
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
@@ -29,7 +29,7 @@ requirements:
     - scikit-learn
     - nibabel
     - joblib
-    - matplotlib
+    - matplotlib-base
 
 test:
   imports:
