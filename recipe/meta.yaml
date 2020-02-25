@@ -32,6 +32,10 @@ requirements:
     - matplotlib-base
 
 test:
+  requires:
+    - pip
+  commands:
+    - pip check
   imports:
     - nilearn
 
