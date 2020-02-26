@@ -32,12 +32,13 @@ requirements:
     - matplotlib-base
 
 test:
-  requires:
-    - pip
-  commands:
-    - pip check
   imports:
     - nilearn
+  # we cannot use pip-check b/c scikit-learn is found by its import name sklearn :-(
+  # requires:
+  #   - pip
+  # commands:
+  #   - pip check
 
 about:
   home: https://nilearn.github.io
