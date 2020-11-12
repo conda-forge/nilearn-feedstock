@@ -11,25 +11,21 @@ source:
 build:
   number: 0
   noarch: python
-  script: {{ PYTHON }} -m pip install . --no-deps -vv
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   build:
     - python >=3.5
     - pip
-    - numpy
-    - scipy
-    - scikit-learn
-    - joblib
-    - nibabel
   run:
     - python >=3.5
-    - numpy
-    - scipy
-    - scikit-learn
-    - nibabel
-    - joblib
-    - matplotlib-base
+    - joblib >=0.12
+    - nibabel >=2.0.2
+    - numpy >=1.11
+    - pandas >=0.18.0
+    - requests >=2
+    - scikit-learn >=0.19
+    - scipy >=0.19
 
 test:
   imports:
