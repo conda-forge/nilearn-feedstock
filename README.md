@@ -5,11 +5,9 @@ Home: https://nilearn.github.io
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/nilearn-feedstock/blob/master/LICENSE.txt)
 
 Summary: Statistical learning for neuroimaging in Python
-
-
 
 Current build status
 ====================

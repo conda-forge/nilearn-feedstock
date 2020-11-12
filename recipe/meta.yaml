@@ -1,4 +1,4 @@
-{% set version = "0.6.2" %}
+{% set version = "0.7.0" %}
 
 package:
   name: nilearn
@@ -6,30 +6,26 @@ package:
 
 source:
   url: https://pypi.io/packages/source/n/nilearn/nilearn-{{ version }}.tar.gz
-  sha256: cfc6cfda59a6f4247189f8ccf92e364de450460a15c0ec21bdb857c420dd198c
+  sha256: e7c9df82a31319366f02919794e0ec4eacbae1fb24c41c826070c2a3acf117e6
 
 build:
   number: 0
   noarch: python
-  script: {{ PYTHON }} -m pip install . --no-deps -vv
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   build:
     - python >=3.5
     - pip
-    - numpy
-    - scipy
-    - scikit-learn
-    - joblib
-    - nibabel
   run:
     - python >=3.5
-    - numpy
-    - scipy
-    - scikit-learn
-    - nibabel
-    - joblib
-    - matplotlib-base
+    - joblib >=0.12
+    - nibabel >=2.0.2
+    - numpy >=1.11
+    - pandas >=0.18.0
+    - requests >=2
+    - scikit-learn >=0.19
+    - scipy >=0.19
 
 test:
   imports:
