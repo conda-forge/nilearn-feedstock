@@ -9,7 +9,7 @@ source:
   sha256: f9c8e30adef51489910aec7724b5699de178427d3ae63873dad9b23dd321fe76
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -18,7 +18,7 @@ requirements:
     - python >=3.6
     - pip
   run:
-    - python >=3.5
+    - python >=3.6
     - joblib >=0.12
     - nibabel >=2.5
     - numpy >=1.16
