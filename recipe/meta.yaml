@@ -1,4 +1,4 @@
-{% set version = "0.8.1" %}
+{% set version = "0.9.0" %}
 
 package:
   name: nilearn
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/n/nilearn/nilearn-{{ version }}.tar.gz
-  sha256: a0489940855130f35bbc4cac0750479a6f82025215ea7b1d778faca064219298
+  sha256: f9c8e30adef51489910aec7724b5699de178427d3ae63873dad9b23dd321fe76
 
 build:
   number: 0
@@ -15,17 +15,17 @@ build:
 
 requirements:
   host:
-    - python >=3.5
+    - python >=3.6
     - pip
   run:
     - python >=3.5
     - joblib >=0.12
-    - nibabel >=2.0.2
-    - numpy >=1.11
-    - pandas >=0.18.0
+    - nibabel >=2.5
+    - numpy >=1.16
+    - pandas >=0.24.0
     - requests >=2
-    - scikit-learn >=0.19
-    - scipy >=0.19
+    - scikit-learn >=0.21
+    - scipy >=1.2
 
 test:
   imports:
