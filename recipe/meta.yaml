@@ -1,4 +1,4 @@
-{% set version = "0.9.0" %}
+{% set version = "0.9.1" %}
 
 package:
   name: nilearn
@@ -6,10 +6,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/n/nilearn/nilearn-{{ version }}.tar.gz
-  sha256: f9c8e30adef51489910aec7724b5699de178427d3ae63873dad9b23dd321fe76
+  sha256: dd821b4ff2b3b87f5e4b034ea0f95fce4375ace586de8ed17e6a667bde1925d7
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
