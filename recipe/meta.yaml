@@ -1,32 +1,36 @@
-{% set version = "0.10.0" %}
+{% set name = "nilearn" %}
+{% set version = "0.10.1" %}
 
 package:
-  name: nilearn
+  name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/n/nilearn/nilearn-{{ version }}.tar.gz
-  sha256: cc7f1068e038076527ead1bd363436f88f5e8d21e8bb57b323b30b926fc7553a
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/nilearn-{{ version }}.tar.gz
+  sha256: 928a364e7ed77d15d02b7f227197ea7c78f44f2fe780feb555d6d7cf9232f846
 
 build:
-  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
+  number: 0
 
 requirements:
   host:
     - python >=3.7
+    - hatchling
+    - hatch-vcs
     - pip
   run:
     - python >=3.7
     - joblib >=1.0.0
     - lxml
-    - nibabel >=3.0.0
+    - nibabel >=3.2.0
     - numpy >=1.19.0
     - pandas >=1.1.5
     - requests >=2.25.0
     - scikit-learn >=1.0.0
     - scipy >=1.6.0
+    - packaging
 
 
 test:
