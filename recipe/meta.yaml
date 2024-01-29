@@ -16,12 +16,12 @@ build:
 
 requirements:
   host:
-    - python >=3.7
+    - python >=3.8
     - hatchling
     - hatch-vcs
     - pip
   run:
-    - python >=3.7
+    - python >=3.8
     - joblib >=1.0.0
     - lxml
     - nibabel >=4.0.0
