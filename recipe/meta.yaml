@@ -1,5 +1,5 @@
 {% set name = "nilearn" %}
-{% set version = "0.10.2" %}
+{% set version = "0.10.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/nilearn-{{ version }}.tar.gz
-  sha256: 03ef4da72d1ae87b2e3f28b771dc7e05464aa179626e57c300595625a8654273
+  sha256: 77819331314c4ca5c15c07634f69f855fafdf9add051b1882e3a600ad52757d8
 
 build:
   noarch: python
@@ -16,20 +16,20 @@ build:
 
 requirements:
   host:
-    - python >=3.7
+    - python >=3.8
     - hatchling
     - hatch-vcs
     - pip
   run:
-    - python >=3.7
+    - python >=3.8
     - joblib >=1.0.0
     - lxml
-    - nibabel >=3.2.0
+    - nibabel >=4.0.0
     - numpy >=1.19.0
     - pandas >=1.1.5
     - requests >=2.25.0
     - scikit-learn >=1.0.0
-    - scipy >=1.6.0
+    - scipy >=1.8.0
     - packaging
 
 
