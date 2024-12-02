@@ -16,12 +16,12 @@ build:
 
 requirements:
   host:
-    - python >=3.8
+    - python {{ python_min }}
     - hatchling
     - hatch-vcs
     - pip
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - joblib >=1.2.0
     - lxml
     - nibabel >=5.2.0
@@ -36,9 +36,10 @@ requirements:
 test:
   imports:
     - nilearn
+  requires:
+    - python {{ python_min }}
+    - pip
   # we cannot use pip-check b/c scikit-learn is found by its import name sklearn :-(
-  # requires:
-  #   - pip
   # commands:
   #   - pip check
 
