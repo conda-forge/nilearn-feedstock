@@ -3,7 +3,7 @@ About nilearn-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/nilearn-feedstock/blob/main/LICENSE.txt)
 
-Home: https://nilearn.github.io
+Home: https://nilearn.github.io/
 
 Package license: BSD-3-Clause
 
